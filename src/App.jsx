@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Button from './components/Button/Button'
+import NavBar from './components/NavBar/NavBar'
 
 
 
@@ -9,6 +10,9 @@ function App() {
 
   return (
     <>
+      <NavBar/>
+
+
       <h1>Curso React JS</h1>
 
       <Button text = "Contador:" color="red"/> 

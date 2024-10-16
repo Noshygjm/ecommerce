@@ -3,6 +3,6 @@
 
 ### E-Commerce
 
-** Descripción: **
+**Descripción:**
 
 Simulación de E-Commerce utilizando React JS
