@@ -1,5 +1,6 @@
 body {
   background-color: #000000;
+  color: white;
 }
 
 #root {
@@ -8,8 +9,6 @@ body {
   padding: 2rem;
   text-align: center;
 }
-
-/* Css mio */
 
 /* Posicion del NavBar */
 .navbar {
@@ -73,5 +72,6 @@ body {
   font-size: 18px;       
   margin-left: 20px;  
   margin-right: 20px;  
+  color: black;
 }
 
