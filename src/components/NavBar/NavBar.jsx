@@ -8,7 +8,6 @@ import ItemListContainer from "../ItemListContainer/ItemListContainer";
 const NavBar = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
 
-  // Obtener las categorías únicas del array de cursos
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
 
   const handleCategoriaClick = (categoria) => {
