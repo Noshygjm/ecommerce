@@ -12,42 +12,62 @@ body {
 
 /* Posicion del NavBar */
 .navbar {
-  position: fixed;
+  position: relative;
+  background-color: #333;
+  padding: 10px;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  padding: 10px;
 }
 
-/* Elementos de la lista del NavBar */
 .nav-list {
+  list-style: none;
   display: flex;
-  
-  list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
-.nav-list li {
-  margin-left: 20px;
+.nav-list > li {
+  margin-right: 20px;
+  position: relative;
 }
 
-.nav-list a {
-  color: white;
+.nav-list > li > a {
   text-decoration: none;
-  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
-.nav-list a:hover {
-  color: rgb(129, 129, 129);
-  text-decoration: underline;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  color: #f0c040;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Logo */
 .logo {
   width: 32px;
   height: 32px;
+  margin-right: 20px;
 }
 
 /* Carrito de compras */
