@@ -1,26 +1,23 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import TituloH1 from './components/Titulos/TituloH1'
-
-
+import Contacto from "./components/screens/Contacto";
+import Home from './components/screens/Home';
 
 function App() {
   return (
-    <>
-
-      <NavBar/>
-
+    <Router>
+      <NavBar />
       <main>
-
-      <TituloH1 h1="Mil y una formas de aprender" />
-
-      <ItemListContainer mensaje="Bienvenidos a tu proxima capacitación"/>
-      
+        <Routes>
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/cursos" element={<ItemListContainer />} />
+          <Route exact path="/contacto" element={<Contacto />} />
+        </Routes>
       </main>
-
-    </>
-  )
+    </Router>
+  );
 }
 
 export default App

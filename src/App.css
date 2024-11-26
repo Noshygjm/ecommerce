@@ -1,6 +1,23 @@
-body {
+html, body {
   background-color: #000000;
   color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+  
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   
+  font-family: Arial, sans-serif; 
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  padding: 20px; /* Espaciado opcional */
+  margin: 0;
 }
 
 #root {
