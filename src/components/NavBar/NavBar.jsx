@@ -22,7 +22,7 @@ const NavBar = () => {
           <li><Link to="/home">Home</Link></li>
           
           <li className="dropdown">
-            <a href="#Cursos">Cursos</a>
+          <Link to="/cursos">Cursos</Link>
             <ul className="dropdown-menu">
               {categorias.map((categoria) => (
                 <li key={categoria}>
